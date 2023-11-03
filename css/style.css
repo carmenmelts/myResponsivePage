@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-size: 2rem;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+.container div {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 480px) {
+    .tablet {
+        display: none;
+    }
+    .laptop {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    .container {
+        background-color: rgb(95, 0, 41);
+        color: rgb(255, 172, 192);
+        width: 100%;
+    }
+}
+
+@media (min-width: 780px) {
+    .smartphone {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+    .container {
+        background-color: rgb(0, 0, 110);
+    }
+}
+
+@media (min-width: 1024px) {
+    .laptop {
+        display: block;
+    }
+    .tablet {
+        display: none;
+    }
+    .container {
+        background-color: blueviolet;
+        color: black;
+    }
+}
+
+@media (min-width: 1200px) {
+    .laptop {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    .container {
+        width: 75%;
+    }
+}
